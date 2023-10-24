@@ -1,0 +1,287 @@
+$back-volor: #ffffff;
+$primary-color: #FFBC00;
+$secondary-color: #333333;
+
+@import "allMixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: $back-volor;
+
+}
+
+// home-header css
+
+#home-header {
+    height: 100vh;
+    background: url("../img/showcase.jpg") no-repeat center center/cover;
+
+    .navbar {
+        height: 8.5rem;
+        @include flex-box;
+
+        .nav-logo {
+            margin-left: 4rem;
+            width: 6rem;
+            height: 6rem;
+            background-color: red;
+            background: url("../img/logo.png") no-repeat center center/cover;
+
+
+        }
+
+    }
+
+    .menu {
+        list-style: none;
+        @include flex-box;
+        gap: 3rem;
+        margin-right: 4rem;
+
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: .7rem .7rem;
+            border-bottom: .3rem solid transparent;
+            transition: all .4s;
+
+            &:hover {
+                border-bottom: .3rem solid $back-volor;
+
+            }
+
+        }
+    }
+
+    .home-content {
+        height: calc(100vh - 8.5rem);
+        @include flex-box;
+        justify-content: center;
+
+        div {
+            color: white;
+            min-width: 50%;
+            min-height: 20rem;
+            @include flex-box;
+            flex-direction: column;
+            justify-content: center;
+
+
+            h3 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 2.2rem;
+
+            }
+
+            a {
+                background-color: $back-volor;
+                color: $secondary-color;
+                text-decoration: none;
+                margin-top: 3rem;
+                padding: 1.5rem 3.5rem;
+                font-size: 1.7rem;
+                transition: background-color 0.4s;
+
+                &:hover {
+                    background-color: $primary-color;
+                }
+
+            }
+
+        }
+    }
+}
+
+// home section a
+
+#home-sec-a {
+
+    .sec-a-div1 {
+        @include heading-para;
+    }
+
+    .sec-a-div2 {
+        @include flex-box;
+        margin-bottom: 5rem;
+
+        div {
+            width: calc(100% / 4);
+            text-align: center;
+            padding: 1.5rem;
+            line-height: 2.8rem;
+
+            i {
+                font-size: 4rem;
+                color: $primary-color;
+            }
+
+            h3 {
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+
+        }
+
+    }
+
+    .sec-a-div3 {
+        @include flex-box;
+
+        div {
+            width: calc(100% / 4);
+            text-align: center;
+            padding: 4rem;
+            line-height: 5rem;
+            background-color: #F4F4F4;
+
+            i {
+                font-size: 5rem;
+            }
+
+            h3 {
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-size: 4rem;
+                font-weight: bold;
+            }
+
+            &:nth-child(even) {
+                background-color: #CCCCCC;
+            }
+        }
+
+
+    }
+
+
+}
+
+//home section b css
+#home-sec-b {
+    margin-top: 5rem;
+
+    .sec-b-div1 {
+        @include heading-para;
+    }
+
+    .sec-b-div2 {
+        @include flex-box;
+
+
+        .section-b-div-div {
+            width: calc(100% / 4);
+            @include flex-box;
+            gap: 1.5rem;
+            flex-direction: column;
+            padding: 1.5rem;
+
+            
+        }
+
+        .sec-b-icon {
+            display: inline-block;
+            width: 12rem;
+            height: 12rem;
+            background-color: $secondary-color;
+            position: relative;
+            @include flex-box;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all .8s;
+
+            i {
+                font-size: 6rem;
+                color: $back-volor;
+
+            }
+
+            .numbering {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3.7rem;
+                height: 3.7rem;
+                border-radius: 50%;
+                background-color: $primary-color;
+                @include flex-box;
+                justify-content: center;
+                font-size: 2rem;
+                font-weight: bold;
+                color: white;
+                transition: all .8s;
+
+            }
+            &:hover{
+                height: 14rem;
+                width: 14rem;
+                background-color: #FFBC00;
+                .numbering{
+                    background-color: black;
+                }
+
+            }
+
+        }
+
+        h3 {
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 2.5rem;
+
+            
+        }
+
+    }
+
+
+}
+
+footer{
+    background-color: $secondary-color;
+    color:$back-volor;
+    height: 8rem;
+    @include flex-box;
+    padding: 0 3rem;
+
+    p{
+        font-size: 1.5rem;
+    }
+    .footer-icon{
+        i{
+            border: .2rem solid;
+            border-radius: 50%;
+            padding: 1rem;
+            font-size: 1.5rem;
+            margin-left: 2rem;
+
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+}

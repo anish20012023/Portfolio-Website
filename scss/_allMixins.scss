@@ -1,0 +1,38 @@
+
+@mixin flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin heading-bottom-border {
+   &::after{
+    content: "";
+    background-color: $primary-color;
+    width: 30%;
+    height: .2rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+   }
+}
+
+@mixin heading-para{
+    text-align: center;
+    line-height: 2.5;
+
+    h1 {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 100;
+        position: relative;
+
+       @include heading-bottom-border;
+    }
+
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
