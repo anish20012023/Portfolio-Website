@@ -22,6 +22,8 @@ body {
 
 // home-header css
 
+
+
 #home-header {
     height: 100vh;
     background: url("../img/showcase.jpg") no-repeat center center/cover;
@@ -62,6 +64,10 @@ body {
                 border-bottom: .3rem solid $back-volor;
 
             }
+            &.active{
+                border-bottom: .3rem solid $primary-color;
+
+            }
 
         }
     }
@@ -82,6 +88,15 @@ body {
 
             h3 {
                 font-size: 6rem;
+               padding-right: 2rem;
+                border-right: .6rem solid ;
+                width: 0;
+                white-space:nowrap;
+                overflow: hidden;
+                animation:typing 7s steps(20,end) infinite forwards;
+               
+            
+
             }
 
             p {
@@ -101,11 +116,32 @@ body {
                 &:hover {
                     background-color: $primary-color;
                 }
+                
 
             }
 
         }
     }
+}
+ //other page header
+#home-header.other-page-header{
+    height: 8.5rem;
+    background: url("../img/showcase.jpg") no-repeat center/cover;
+  background-position-y: -23rem;
+  border-bottom: .2rem solid $primary-color;
+   
+ }
+
+ //keyframe
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    
 }
 
 // home section a
@@ -117,30 +153,7 @@ body {
     }
 
     .sec-a-div2 {
-        @include flex-box;
-        margin-bottom: 5rem;
-
-        div {
-            width: calc(100% / 4);
-            text-align: center;
-            padding: 1.5rem;
-            line-height: 2.8rem;
-
-            i {
-                font-size: 4rem;
-                color: $primary-color;
-            }
-
-            h3 {
-                font-size: 1.7rem;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
-
-
-        }
+       @include four-div
 
     }
 
@@ -285,3 +298,51 @@ footer{
         }
     }
 }
+//about page css
+.about-section-a{
+    .abt-sec-a-div1{
+        @include heading-para;
+        
+    }
+    .abt-sec-a-div3{
+        @include four-div;
+
+        
+    }
+    .abt-sec-a-div2{
+        @include flex-box;
+
+        div{
+            height: 22rem;
+            margin: 1.5rem;
+           
+        }
+        .abt-sec-a-div2-left{
+             width: 30%;
+            background: url(../img/about.jpg) no-repeat center center/cover;
+
+        }
+        .abt-sec-a-div2-right{
+            background-color:#F4F4F4;
+            border-left: .5rem solid $primary-color;
+            width: 70%;
+            text-align: center;
+            padding: 2rem;
+            line-height: 2.5rem;
+
+            h3{
+                font-size: 1.7rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+            
+        }
+       
+        
+    }
+
+}
+
+
+
