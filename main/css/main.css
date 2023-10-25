@@ -310,3 +310,106 @@ footer {
       font-size: 1.7rem; }
     .about-section-a .abt-sec-a-div2 .abt-sec-a-div2-right p {
       font-size: 1.6rem; }
+
+.about-section-b {
+  background-color: #333333;
+  padding: 3rem 0; }
+  .about-section-b .technical-skills h1 {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 100;
+    position: relative;
+    line-height: 2;
+    color: white; }
+    .about-section-b .technical-skills h1::after {
+      content: "";
+      background-color: #FFBC00;
+      width: 30%;
+      height: .2rem;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute; }
+  .about-section-b .technical-skills .progress-div {
+    margin-top: 2rem;
+    color: #ffffff;
+    padding: 0 3rem; }
+    .about-section-b .technical-skills .progress-div h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    .about-section-b .technical-skills .progress-div .progress {
+      height: 2rem;
+      border-radius: .5rem;
+      background-color: #e8e8e8; }
+      .about-section-b .technical-skills .progress-div .progress .total-progress {
+        background-color: #FFBC00;
+        height: 100%;
+        border-radius: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: bold; }
+  .about-section-b .partner {
+    border: 1px solid;
+    margin-top: 5rem;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem; }
+    .about-section-b .partner div {
+      padding: 3rem; }
+
+.about-section-c .testimonial-heading {
+  text-align: center;
+  line-height: 2.5;
+  margin-top: 3rem; }
+  .about-section-c .testimonial-heading h1 {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 100;
+    position: relative; }
+    .about-section-c .testimonial-heading h1::after {
+      content: "";
+      background-color: #FFBC00;
+      width: 30%;
+      height: .2rem;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute; }
+  .about-section-c .testimonial-heading p {
+    font-size: 2.4rem;
+    font-weight: 100;
+    margin-bottom: 2rem; }
+
+.about-section-c .testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .about-section-c .testimonials .testimonial-div {
+    width: calc(100% / 4);
+    padding: 1.5rem; }
+    .about-section-c .testimonials .testimonial-div p {
+      border: .1rem solid #CCCCCC;
+      border-radius: .8rem;
+      min-height: 10rem;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      padding: 1rem; }
+    .about-section-c .testimonials .testimonial-div .image-test {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 3rem;
+      gap: 1rem;
+      margin-top: 2rem; }
+      .about-section-c .testimonials .testimonial-div .image-test img {
+        width: 5rem;
+        border-radius: 50%; }
+      .about-section-c .testimonials .testimonial-div .image-test h3 {
+        font-size: 1.3rem;
+        font-weight: 100; }

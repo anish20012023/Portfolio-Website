@@ -64,7 +64,8 @@ body {
                 border-bottom: .3rem solid $back-volor;
 
             }
-            &.active{
+
+            &.active {
                 border-bottom: .3rem solid $primary-color;
 
             }
@@ -88,14 +89,14 @@ body {
 
             h3 {
                 font-size: 6rem;
-               padding-right: 2rem;
-                border-right: .6rem solid ;
+                padding-right: 2rem;
+                border-right: .6rem solid;
                 width: 0;
-                white-space:nowrap;
+                white-space: nowrap;
                 overflow: hidden;
-                animation:typing 7s steps(20,end) infinite forwards;
-               
-            
+                animation: typing 7s steps(20, end) infinite forwards;
+
+
 
             }
 
@@ -116,32 +117,34 @@ body {
                 &:hover {
                     background-color: $primary-color;
                 }
-                
+
 
             }
 
         }
     }
 }
- //other page header
-#home-header.other-page-header{
+
+//other page header
+#home-header.other-page-header {
     height: 8.5rem;
     background: url("../img/showcase.jpg") no-repeat center/cover;
-  background-position-y: -23rem;
-  border-bottom: .2rem solid $primary-color;
-   
- }
+    background-position-y: -23rem;
+    border-bottom: .2rem solid $primary-color;
 
- //keyframe
+}
+
+//keyframe
 
 @keyframes typing {
-    0%{
+    0% {
         width: 0;
     }
-    50%{
+
+    50% {
         width: 100%;
     }
-    
+
 }
 
 // home section a
@@ -153,8 +156,7 @@ body {
     }
 
     .sec-a-div2 {
-       @include four-div
-
+        @include four-div
     }
 
     .sec-a-div3 {
@@ -210,7 +212,7 @@ body {
             flex-direction: column;
             padding: 1.5rem;
 
-            
+
         }
 
         .sec-b-icon {
@@ -246,11 +248,13 @@ body {
                 transition: all .8s;
 
             }
-            &:hover{
+
+            &:hover {
                 height: 14rem;
                 width: 14rem;
                 background-color: #FFBC00;
-                .numbering{
+
+                .numbering {
                     background-color: black;
                 }
 
@@ -261,12 +265,13 @@ body {
         h3 {
             font-size: 1.6rem;
         }
-        p{
+
+        p {
             font-size: 1.6rem;
             text-align: center;
             line-height: 2.5rem;
 
-            
+
         }
 
     }
@@ -274,75 +279,199 @@ body {
 
 }
 
-footer{
+footer {
     background-color: $secondary-color;
-    color:$back-volor;
+    color: $back-volor;
     height: 8rem;
     @include flex-box;
     padding: 0 3rem;
 
-    p{
+    p {
         font-size: 1.5rem;
     }
-    .footer-icon{
-        i{
+
+    .footer-icon {
+        i {
             border: .2rem solid;
             border-radius: 50%;
             padding: 1rem;
             font-size: 1.5rem;
             margin-left: 2rem;
 
-            &:hover{
+            &:hover {
                 background-color: $primary-color;
             }
         }
     }
 }
+
 //about page css
-.about-section-a{
-    .abt-sec-a-div1{
+.about-section-a {
+    .abt-sec-a-div1 {
         @include heading-para;
-        
+
     }
-    .abt-sec-a-div3{
+
+    .abt-sec-a-div3 {
         @include four-div;
 
-        
+
     }
-    .abt-sec-a-div2{
+
+    .abt-sec-a-div2 {
         @include flex-box;
 
-        div{
+        div {
             height: 22rem;
             margin: 1.5rem;
-           
+
         }
-        .abt-sec-a-div2-left{
-             width: 30%;
+
+        .abt-sec-a-div2-left {
+            width: 30%;
             background: url(../img/about.jpg) no-repeat center center/cover;
 
         }
-        .abt-sec-a-div2-right{
-            background-color:#F4F4F4;
+
+        .abt-sec-a-div2-right {
+            background-color: #F4F4F4;
             border-left: .5rem solid $primary-color;
             width: 70%;
             text-align: center;
             padding: 2rem;
             line-height: 2.5rem;
 
-            h3{
+            h3 {
                 font-size: 1.7rem;
             }
-            p{
+
+            p {
                 font-size: 1.6rem;
             }
-            
+
         }
-       
-        
+
+
     }
 
 }
 
+.about-section-b {
+    background-color: #333333;
+    padding: 3rem 0;
+
+    .technical-skills {
+        h1 {
+            width: max-content;
+            margin: 0 auto;
+            font-size: 3rem;
+            font-weight: 100;
+            position: relative;
+            line-height: 2;
+            color: white;
 
 
+            &::after {
+                content: "";
+                background-color: #FFBC00;
+                width: 30%;
+                height: .2rem;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+            }
+
+
+        }
+
+        .progress-div {
+            margin-top: 2rem;
+            color: $back-volor;
+            padding: 0 3rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+
+
+            }
+            .progress{
+                height: 2rem;
+                border-radius: .5rem;  
+                background-color: #e8e8e8;
+
+                .total-progress{
+                    background-color:$primary-color;
+                    height: 100%;
+                    border-radius: .5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+
+                }
+            }
+        }
+
+
+    }
+
+    .partner{
+        border: 1px solid;
+        margin-top: 5rem;
+        background-color: #e8e8e8;
+        @include flex-box;
+        padding: 3rem;
+        
+        div{
+            padding: 3rem ;
+            
+        }
+    }
+
+    
+}
+.about-section-c{
+
+    .testimonial-heading{
+        @include heading-para;
+        margin-top: 3rem
+    }
+
+    .testimonials{
+        @include flex-box;
+        
+        
+        .testimonial-div{
+            width: calc(100% / 4);
+            padding: 1.5rem;
+
+            p{
+                border: .1rem solid #CCCCCC;
+                border-radius: .8rem;
+                min-height: 10rem;
+                font-size: 1.5rem;
+                line-height: 1.5;
+                padding: 1rem;
+                
+
+            }
+            .image-test{ @include flex-box;
+                justify-content:start;
+                margin-bottom: 3rem;
+                gap: 1rem;
+                margin-top: 2rem;
+                img{
+                    width: 5rem;
+                    border-radius: 50%;
+                }
+                h3{
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
