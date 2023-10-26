@@ -679,4 +679,161 @@ footer .footer-icon i:hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+  #home-header {
+    height: 22vh !important;
+    border-bottom: 0.5rem solid #FFBC00 !important;
+  }
+  #home-header .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #home-header .navbar .nav-logo {
+    margin: 0rem;
+    width: 9rem;
+    height: 9rem;
+  }
+  #home-header .menu {
+    gap: 3rem;
+    margin-right: 0;
+  }
+  #home-header .menu li a {
+    font-size: 2.5rem;
+  }
+  #home-header.other-page-header {
+    background-position-y: center;
+  }
+  .home-content {
+    min-height: 78vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .home-content div {
+    color: rgb(240, 32, 32);
+    min-width: 50%;
+    min-height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-content div h3 {
+    font-size: 6rem;
+    padding-right: 2rem;
+    border-right: 0.6rem solid;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 7s steps(20, end) infinite forwards;
+  }
+  .home-content div p {
+    font-size: 2.2rem;
+  }
+  .home-content div a {
+    background-color: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    margin-top: 3rem;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.7rem;
+    transition: background-color 0.4s;
+  }
+  .home-content div a:hover {
+    background-color: #FFBC00;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+#home-sec-a .sec-a-div1 {
+  text-align: center;
+  line-height: 2.5;
+}
+#home-sec-a .sec-a-div1 h1 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 100;
+  position: relative;
+}
+#home-sec-a .sec-a-div1 h1::after {
+  content: "";
+  background-color: #FFBC00;
+  width: 30%;
+  height: 0.2rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+#home-sec-a .sec-a-div1 p {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+#home-sec-a .sec-a-div2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+#home-sec-a .sec-a-div2 div {
+  width: 25%;
+  text-align: center;
+  padding: 1.5rem;
+  line-height: 2.8rem;
+}
+#home-sec-a .sec-a-div2 div i {
+  font-size: 4rem;
+  color: #FFBC00;
+}
+#home-sec-a .sec-a-div2 div h3 {
+  font-size: 1.7rem;
+}
+#home-sec-a .sec-a-div2 div p {
+  font-size: 1.5rem;
+}
+#home-sec-a .sec-a-div3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home-sec-a .sec-a-div3 div {
+  width: 25%;
+  text-align: center;
+  padding: 4rem;
+  line-height: 5rem;
+  background-color: #F4F4F4;
+}
+#home-sec-a .sec-a-div3 div i {
+  font-size: 5rem;
+}
+#home-sec-a .sec-a-div3 div h3 {
+  font-size: 1.7rem;
+}
+#home-sec-a .sec-a-div3 div p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+#home-sec-a .sec-a-div3 div:nth-child(even) {
+  background-color: #CCCCCC;
 }/*# sourceMappingURL=main.css.map */

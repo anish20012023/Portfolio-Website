@@ -37,6 +37,7 @@
         margin-bottom: 2rem;
     }
 }
+
 @mixin four-div{
     @include flex-box;
     margin-bottom: 5rem;
@@ -59,6 +60,61 @@
 
         p {
             font-size: 1.5rem;
+          
+            
+        }
+
+
+    }
+}
+
+
+//media query
+
+
+// head-para media query
+
+@mixin heading-para-media{
+    line-height: 2.2;
+    margin-top: 3rem;
+
+    h1 {
+        font-size: 5rem;
+        @include heading-bottom-border;
+    }
+
+    p {padding: 6rem;
+        line-height: 4.5rem;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@mixin four-div-media{
+    @include flex-box;
+    display: block;
+    margin-bottom: 5rem;
+
+    div {
+        width:100%;
+        text-align: center;
+        padding: 3rem;
+        line-height: 1.8;
+      
+
+        i {
+            font-size: 6rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 3rem;
+            line-height: 1.2;
           
             
         }

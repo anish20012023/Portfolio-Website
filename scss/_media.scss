@@ -1,0 +1,312 @@
+@media only screen and (max-width:480px) {
+    html {
+        font-size: 40%;
+    }
+
+    #home-header {
+        height: 22vh !important;
+        border-bottom: .5rem solid $primary-color !important;
+
+        .navbar {
+            height: 100%;
+            @include flex-box;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+            .nav-logo {
+                margin: 0rem;
+                width: 9rem;
+                height: 9rem;
+            }
+
+        }
+
+        .menu {
+            gap: 3rem;
+            margin-right: 0;
+
+
+            li a {
+                font-size: 2.5rem;
+
+            }
+        }
+
+
+        .home-content {
+            height: calc(100vh - 8.5rem);
+            @include flex-box;
+            justify-content: center;
+
+            div {
+                display: none !important;
+
+            }
+        }
+
+    }
+
+
+    // other page header css
+    #home-header.other-page-header {
+
+        background-position-y: center;
+
+    }
+
+
+
+    #home-sec-a {
+
+        .sec-a-div1 {
+            @include heading-para-media;
+
+        }
+
+        .sec-a-div2 {
+            @include four-div-media;
+
+        }
+
+        .sec-a-div3 {
+            display: block;
+
+            div {
+                width: 100%;
+                padding: 10rem;
+
+                i {
+                    font-size: 7rem;
+                }
+
+                h3 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 5rem;
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    //home section b css
+    #home-sec-b {
+        margin-top: 5rem;
+
+        .sec-b-div1 {
+            @include heading-para-media;
+        }
+
+        .sec-b-div2 {
+            display: block;
+
+            .section-b-div-div {
+                width: 100%;
+                @include flex-box;
+                gap: 1.5rem;
+                flex-direction: column;
+                padding: 1.5rem;
+
+
+            }
+
+            .sec-b-icon {
+                width: 20rem;
+                height: 20rem;
+
+                &:hover {
+                    width: 25rem;
+                    height: 25rem;
+                }
+
+                i {
+                    font-size: 9rem;
+
+                }
+
+                .numbering {
+                    width: 7rem;
+                    height: 7rem;
+                    font-size: 3rem;
+
+                }
+            }
+
+            h3 {
+                font-size: 3rem;
+            }
+
+            p {
+                padding: 1rem;
+                font-size: 2.5rem;
+                line-height: 3.5rem;
+
+
+            }
+
+        }
+
+
+    }
+
+    footer {
+        min-height: 20rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+
+
+        p {
+            font-size: 2.3rem;
+        }
+
+        .footer-icon {
+            i {
+                border: .5rem solid;
+                border-radius: 50%;
+                padding: 2rem;
+                font-size: 2rem;
+
+
+            }
+        }
+    }
+
+
+
+
+
+    //about page css
+    .about-section-a {
+        .abt-sec-a-div1 {
+            @include heading-para-media;
+
+        }
+
+        .abt-sec-a-div3 {
+            @include four-div-media;
+
+
+        }
+
+        .abt-sec-a-div2 {
+            display: block;
+
+            div {
+                min-height: 30rem;
+                margin: 3rem auto;
+
+
+            }
+
+            .abt-sec-a-div2-left {
+                width: 90%;
+            }
+
+            .abt-sec-a-div2-right {
+                border-left: .6rem solid $primary-color;
+                width: 90%;
+                line-height: 4rem;
+
+                h3 {
+                    font-size: 2.7rem;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    font-size: 2.6rem;
+                }
+
+            }
+
+
+        }
+
+    }
+
+    .about-section-b {
+        padding: 4rem 0;
+
+        .technical-skills {
+            h1 {
+                font-size: 5rem;
+
+
+            }
+
+            .progress-div {
+                margin-top: 2rem;
+                color: $back-volor;
+                padding: 0 4rem;
+
+                h3 {
+                    font-size: 2.5rem;
+
+
+                }
+
+                .progress {
+                    height: 3rem;
+
+                    .total-progress {
+                        
+                        font-size: 2rem;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+
+
+        }
+
+        .partner {
+            display: none !important;
+        }
+
+
+    }
+
+    .about-section-c {
+
+        .testimonial-heading {
+            @include heading-para-media;
+        }
+
+        .testimonials {
+            @include flex-box;
+            flex-direction: column;
+
+
+            .testimonial-div {
+                width: 100%;
+                padding: 2.5rem;
+
+                p {font-size: 2.5rem;
+                    padding: 2rem;
+                }
+
+                .image-test {
+
+                    img {
+                        width: 8rem;
+                    }
+
+                    h3 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
