@@ -257,7 +257,7 @@
                     height: 3rem;
 
                     .total-progress {
-                        
+
                         font-size: 2rem;
                         font-weight: bold;
 
@@ -290,7 +290,8 @@
                 width: 100%;
                 padding: 2.5rem;
 
-                p {font-size: 2.5rem;
+                p {
+                    font-size: 2.5rem;
                     padding: 2rem;
                 }
 
@@ -307,6 +308,110 @@
             }
         }
     }
+
+
+    //work page
+
+
+    .work-section {
+        height: auto;
+        padding: 3rem;
+        display: block;
+
+        .work-heading {
+            @include heading-para-media;
+        }
+
+        .work-img-div {
+
+
+
+
+
+            .img-text {
+                width: 100rem;
+                height: 100rem;
+
+                .text-para {
+
+                    h3 {
+                        font-size: 3rem;
+                    }
+
+                    p {
+                        font-size: 5rem;
+                    }
+                }
+            }
+
+
+
+        }
+
+    }
+
+    // contact page css.
+
+.contact-page-sec {
+
+    .contact-head {
+        @include heading-para-media;
+       
+    }
+
+    form {
+
+
+        div.form-input {
+            flex-direction: column;
+            gap: 2rem;
+
+            input {
+                width: 100%;
+                height: 5rem;
+            }
+        }
+
+        textarea {
+            height: 15rem;
+
+        }
+
+        button {
+            margin: 10rem;
+            height: 7rem;
+            background-color: $secondary-color;
+
+           
+
+        }
+    }
+}
+
+.contact-sec2 {
+    display: block;
+
+    div {
+        gap: 1.5rem;
+
+        i {
+            font-size: 6rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 2.8rem;
+        }
+    }
+}
+
+.contact-sec3 {
+    padding:11rem 2rem;
+    font-size: 3rem;
+}
 
 
 }

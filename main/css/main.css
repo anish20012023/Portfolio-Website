@@ -815,4 +815,78 @@ footer {
       .about-section-c .testimonials .testimonial-div .image-test img {
         width: 8rem; }
       .about-section-c .testimonials .testimonial-div .image-test h3 {
-        font-size: 2.5rem; } }
+        font-size: 2.5rem; }
+  .work-section {
+    height: auto;
+    padding: 3rem;
+    display: block; }
+    .work-section .work-heading {
+      line-height: 2.2;
+      margin-top: 3rem; }
+      .work-section .work-heading h1 {
+        font-size: 5rem; }
+        .work-section .work-heading h1::after {
+          content: "";
+          background-color: #FFBC00;
+          width: 30%;
+          height: .2rem;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute; }
+      .work-section .work-heading p {
+        padding: 6rem;
+        line-height: 4.5rem;
+        font-size: 3.5rem;
+        margin-bottom: 2rem; }
+    .work-section .work-img-div .img-text {
+      width: 100rem;
+      height: 100rem; }
+      .work-section .work-img-div .img-text .text-para h3 {
+        font-size: 3rem; }
+      .work-section .work-img-div .img-text .text-para p {
+        font-size: 5rem; }
+  .contact-page-sec .contact-head {
+    line-height: 2.2;
+    margin-top: 3rem; }
+    .contact-page-sec .contact-head h1 {
+      font-size: 5rem; }
+      .contact-page-sec .contact-head h1::after {
+        content: "";
+        background-color: #FFBC00;
+        width: 30%;
+        height: .2rem;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute; }
+    .contact-page-sec .contact-head p {
+      padding: 6rem;
+      line-height: 4.5rem;
+      font-size: 3.5rem;
+      margin-bottom: 2rem; }
+  .contact-page-sec form div.form-input {
+    flex-direction: column;
+    gap: 2rem; }
+    .contact-page-sec form div.form-input input {
+      width: 100%;
+      height: 5rem; }
+  .contact-page-sec form textarea {
+    height: 15rem; }
+  .contact-page-sec form button {
+    margin: 10rem;
+    height: 7rem;
+    background-color: #333333; }
+  .contact-sec2 {
+    display: block; }
+    .contact-sec2 div {
+      gap: 1.5rem; }
+      .contact-sec2 div i {
+        font-size: 6rem; }
+      .contact-sec2 div h3 {
+        font-size: 3rem; }
+      .contact-sec2 div p {
+        font-size: 2.8rem; }
+  .contact-sec3 {
+    padding: 11rem 2rem;
+    font-size: 3rem; } }
