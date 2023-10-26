@@ -886,7 +886,8 @@ footer {
       .contact-sec2 div h3 {
         font-size: 3rem; }
       .contact-sec2 div p {
-        font-size: 2.8rem; }
+        font-size: 2.8rem;
+        text-align: center; }
   .contact-sec3 {
     padding: 11rem 2rem;
     font-size: 3rem; } }
